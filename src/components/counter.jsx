@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 
 class Counter extends React.Component {
     render() { 
-        return <h1>Hello World</h1>;
+        return (<div>
+                    <h1>Hello World</h1>
+                    <button>Increment</button>
+                </div>);
     }
 }
  
