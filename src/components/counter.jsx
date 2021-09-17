@@ -5,12 +5,12 @@ class Counter extends React.Component {
         count: 0
     };
 
-    constructor(){
-        super();
-        this.handleIncrement = this.handleIncrement.bind(this); //with bind we set the value of this
-    }
+    // constructor(){
+    //     super();
+    //     this.handleIncrement = this.handleIncrement.bind(this); //with bind we set the value of this
+    // }
 
-    handleIncrement(){
+    handleIncrement = () =>{
         console.log('Increment Clicked',this);
     }
 
