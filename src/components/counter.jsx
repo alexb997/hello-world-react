@@ -5,13 +5,8 @@ class Counter extends React.Component {
         count: 0
     };
 
-    // constructor(){
-    //     super();
-    //     this.handleIncrement = this.handleIncrement.bind(this); //with bind we set the value of this
-    // }
-
     handleIncrement = () =>{
-        console.log('Increment Clicked',this);
+        this.setState({count : this.state.count + 1}) // makes react look for changes in state.
     }
 
     render() { 
